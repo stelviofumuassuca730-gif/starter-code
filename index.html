@@ -1,18 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stélvio Fumuassuca</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="logo">SF<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre" data-text="sobre">sobre</a></li>
+      <li><a href="#skills" data-text="skills">skills</a></li>
+      <li><a href="#projetos" data-text="projetos">projetos</a></li>
+      <li><a href="#contacto" data-text="contacto">contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="sobre">
+    <div class="hero-bg-text" aria-hidden="true">SF</div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        disponível para colaborações
+      </div>
+      <h1 class="hero-name">
+        <span class="line" data-delay="0">Stélvio</span>
+        <span class="line accent-line" data-delay="100">Fumuassuca</span>
+      </h1>
+      <p class="hero-desc">
+        Developer & estudante de CSE.<br>
+        Construo experiências digitais que importam.
+      </p>
+      <div class="hero-cta">
+        <a href="#projetos" class="btn-main">
+          <span>ver projetos</span>
+          <i class='bx bx-arrow-back bx-rotate-180'></i>
+        </a>
+        <a href="#contacto" class="btn-ghost">contactar</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar-inner">
+          <img src="graphic.jpg" alt="Stélvio Fumuassuca" onerror="this.style.display='none';document.querySelector('.avatar-fallback').style.display='flex'" />
+          <div class="avatar-fallback">SF</div>
+        </div>
+      </div>
+      <div class="floating-card card-1">
+        <i class='bx bx-code-alt'></i>
+        <span>Full-stack</span>
+      </div>
+      <div class="floating-card card-2">
+        <i class='bx bx-buildings'></i>
+        <span>Angola</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-left">
+        <span class="section-label">01 — sobre</span>
+        <h2 class="section-heading">Quem sou</h2>
+      </div>
+      <div class="about-right">
+        <p>Sou estudante de <strong>Computer Science Engineering</strong> na Rayat School, Chandigarh, Índia. Venho de Angola e combino formação técnica com experiência prática no mundo real.</p>
+        <p>Para além dos estudos, giro o projeto <strong>Muzimóveis</strong> — uma plataforma imobiliária focada no mercado angolano, onde aplico tudo o que aprendo em sala de aula.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-lbl">anos de código</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">CSE</span>
+            <span class="stat-lbl">2nd year</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">AO</span>
+            <span class="stat-lbl">origem Angola</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <span class="section-label">02 — competências</span>
+    <h2 class="section-heading">Stack técnica</h2>
+    <div class="skills-marquee-wrap">
+      <div class="skills-marquee">
+        <div class="marquee-track">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>C++</span>
+          <span>Java</span><span>OOP</span><span>Git</span><span>Linux</span>
+          <span>OS</span><span>Data Structures</span><span>Algorithms</span><span>Vercel</span>
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>C++</span>
+          <span>Java</span><span>OOP</span><span>Git</span><span>Linux</span>
+          <span>OS</span><span>Data Structures</span><span>Algorithms</span><span>Vercel</span>
+        </div>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block reveal">
+        <div class="skill-icon"><i class='bx bxl-html5'></i></div>
+        <h3>Frontend</h3>
+        <p>HTML5, CSS3, JavaScript. Interfaces responsivas e modernas.</p>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-icon"><i class='bx bx-chip'></i></div>
+        <h3>Sistemas</h3>
+        <p>Operating Systems, Computer Architecture, redes e processos.</p>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-icon"><i class='bx bxl-c-plus-plus'></i></div>
+        <h3>Programação</h3>
+        <p>C++, Java, OOP, estruturas de dados e algoritmos.</p>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-icon"><i class='bx bxl-git'></i></div>
+        <h3>DevOps</h3>
+        <p>Git, GitHub, Vercel. Deploy e versionamento de projetos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projects-section" id="projetos">
+    <span class="section-label">03 — trabalho</span>
+    <h2 class="section-heading">Projetos</h2>
+    <div class="projects-list">
+
+      <article class="project-item reveal">
+        <div class="project-num">01</div>
+        <div class="project-img">
+          <img src="web-design.jpg" alt="Muzimóveis" />
+          <div class="project-overlay">
+            <a href="https://muzimoveis.vercel.app" target="_blank">
+              <i class='bx bx-link-external'></i> ver site
+            </a>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="project-meta">
+            <span class="project-year">2024</span>
+            <span class="project-type">Web · Imobiliário</span>
+          </div>
+          <h3>Muzimóveis</h3>
+          <p>Plataforma imobiliária para Angola, com portfólio de imóveis, integração com WhatsApp e formulário via EmailJS. Focada no projeto Kilamba Dream em Luanda.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>EmailJS</span><span>Vercel</span>
+          </div>
+          <a href="https://muzimoveis.vercel.app" target="_blank" class="project-link">
+            Ver projeto <i class='bx bx-arrow-back bx-rotate-180'></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-item reveal">
+        <div class="project-num">02</div>
+        <div class="project-img">
+          <img src="image.jpg" alt="Projeto 2" />
+          <div class="project-overlay">
+            <span><i class='bx bx-time'></i> em breve</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="project-meta">
+            <span class="project-year">2025</span>
+            <span class="project-type">— em desenvolvimento</span>
+          </div>
+          <h3>Projeto [Nome]</h3>
+          <p>Descrição do próximo projeto aqui. Altera este texto quando estiver pronto.</p>
+          <div class="project-stack">
+            <span>placeholder</span>
+          </div>
+          <span class="project-link muted">disponível em breve</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact-section" id="contacto">
+    <span class="section-label">04 — contacto</span>
+    <div class="contact-big">
+      <h2>Vamos<br><em>trabalhar</em><br>juntos.</h2>
+      <div class="contact-links">
+        <a href="mailto:seuemail@gmail.com" class="contact-item reveal">
+          <span class="contact-label">email</span>
+          <span class="contact-value">seuemail@gmail.com <i class='bx bx-link-external'></i></span>
+        </a>
+        <a href="https://github.com/seuuser" target="_blank" class="contact-item reveal">
+          <span class="contact-label">github</span>
+          <span class="contact-value">github.com/seuuser <i class='bx bx-link-external'></i></span>
+        </a>
+        <a href="https://linkedin.com/in/seuuser" target="_blank" class="contact-item reveal">
+          <span class="contact-label">linkedin</span>
+          <span class="contact-value">linkedin.com/in/seuuser <i class='bx bx-link-external'></i></span>
+        </a>
+        <a href="https://wa.me/SEUNUMERO" target="_blank" class="contact-item reveal">
+          <span class="contact-label">whatsapp</span>
+          <span class="contact-value">+XXX XXX XXX XXX <i class='bx bx-link-external'></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Stélvio Fumuassuca</span>
+    <span>Feito com HTML, CSS & JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
